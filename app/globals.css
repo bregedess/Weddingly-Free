@@ -5,6 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-ovo: 'Ovo', serif;
+  --font-legan: 'Legan', serif;
+  --font-wonder: 'Wonder', sans-serif;
+  --font-thesignature: 'Thesignature', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +28,44 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+#backgroundWedding {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../public/foto_1.jpg);
+  background-repeat: no-repeat;
+  transition: 5s;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  background-color: #0a0a0a;
+}
+
+@keyframes animate {
+ 0% {
+  background-image: url(../public/foto_2.jpg);
+ }
+ 25% {
+  background-image: url(../public/foto_3.jpg);
+ }
+  75% {
+    background-image: url(../public/foto_4.jpg);
+  }
+  100% {
+    background-image: url(../public/foto_1.jpg);
+  }
+}
+
+#backgroundWedding > div {
+  animation: fade 5s infinite;
 }

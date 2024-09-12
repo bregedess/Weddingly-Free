@@ -8,9 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        ovo: ["var(--font-ovo)", "serif"],
+        legan: ["var(--font-legan)", "serif"],
+        wonder: ["var(--font-wonder)", "sans-serif"],
+        thesignature: ["var(--font-thesignature)", "serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      keyframes: {
+        upDown: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+      },
+      animation: {
+        upDown: "upDown 1s ease-in-out infinite",
       },
     },
   },
