@@ -8,6 +8,8 @@ import { IoGlobeOutline } from "react-icons/io5";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import CountdownTimer from "./Countdown";
+import Form from "./Form";
+import WishesList from "./WishesList";
 
 const WeddingScreen = () => {
   const [fadeClass, setFadeClass] = useState("opacity-0"); // Untuk fade-in pertama kali
@@ -69,9 +71,15 @@ const WeddingScreen = () => {
   const { ref: slide9Ref, inView: isSlide9InView } = useInView({
     threshold: 0.5,
   });
+  const { ref: slide10Ref, inView: isSlide10InView } = useInView({
+    threshold: 0.5,
+  });
+  const { ref: endRef, inView: isEndInView } = useInView({
+    threshold: 0.5,
+  });
 
   useEffect(() => {
-    const video = document.querySelector('iframe');
+    const video = document.querySelector("iframe");
     if (video) {
       if (isSlide8InView) {
         video.src += "&autoplay=1"; // Mulai video
@@ -505,6 +513,51 @@ const WeddingScreen = () => {
                 </div>
               </div>
             </div>
+            {/* SLIDE 9 */}
+            <div
+              className="snap-start text-white h-screen flex flex-col justify-center pt-16 pb-16 px-8"
+              style={{
+                backgroundImage: `url(/slide_9.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div
+                ref={slide9Ref}
+                className={`${isSlide9InView ? "active" : ""} fadeInMove`}
+              >
+                <h1 className="text-3xl text-white font-ovo text-center uppercase">
+                  RSVP AND WISHES
+                </h1>
+                <p className="text-sm font-legan text-white/80 text-center">
+                  Kindly express your best wishes and kindly confirm your
+                  attendance by using the form provided below. Thank you.
+                </p>
+
+                <Form />
+              </div>
+            </div>
+
+            {/* SLIDE 10 */}
+            <div
+              className="snap-start text-white h-screen flex flex-col justify-center pt-16 pb-16 px-8"
+              style={{
+                backgroundImage: `url(/slide_9.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div
+                ref={slide10Ref}
+                className={`${isSlide10InView ? "active" : ""} fadeInMove`}
+              >
+                <h1 className="text-3xl text-white font-ovo text-center uppercase">
+                  Wishes
+                </h1>
+                <WishesList />
+              </div>
+            </div>
+
             {/* SLIDE AKHIR */}
             <div
               className="snap-start text-white h-screen flex flex-col justify-end pt-16 pb-16 px-12 "
@@ -515,8 +568,8 @@ const WeddingScreen = () => {
               }}
             >
               <div
-                ref={slide9Ref}
-                className={` ${isSlide9InView ? "active" : ""} fadeInMove `}
+                ref={endRef}
+                className={` ${isEndInView ? "active" : ""} fadeInMove `}
               >
                 <h1 className="text-3xl text-white  font-ovo text-center">
                   THANK YOU FOR YOUR ATTENDANCE
