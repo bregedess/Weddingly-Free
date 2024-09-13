@@ -69,3 +69,15 @@ body {
 #backgroundWedding > div {
   animation: fade 5s infinite;
 }
+
+/* Animasi fade-in dan gerakan */
+.fadeInMove {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fadeInMove.active {
+  opacity: 1;
+  transform: translateY(0);
+}
