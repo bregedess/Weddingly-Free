@@ -38,14 +38,14 @@ body {
 #backgroundWedding {
   background-size: cover;
   background-position: center;
-  background-image: url(../public/foto_1.jpg);
+  background-image: url(../public/foto_2.jpg);
   background-repeat: no-repeat;
   transition: 5s;
   animation-name: animate;
   animation-direction: alternate-reverse;
   animation-play-state: running;
   animation-timing-function: ease-in-out;
-  animation-duration: 20s;
+  animation-duration: 10s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   background-color: #0a0a0a;
@@ -55,14 +55,14 @@ body {
  0% {
   background-image: url(../public/foto_2.jpg);
  }
- 25% {
-  background-image: url(../public/foto_3.jpg);
+ 45% {
+  background-image: url(../public/foto_4.jpg);
  }
-  75% {
-    background-image: url(../public/foto_4.jpg);
+  85% {
+    background-image: url(../public/foto_1.jpg);
   }
   100% {
-    background-image: url(../public/foto_1.jpg);
+    background-image: url(../public/foto_2.jpg);
   }
 }
 
@@ -71,13 +71,39 @@ body {
 }
 
 /* Animasi fade-in dan gerakan */
+.fadeMain {
+  opacity: 0;
+  transition: opacity 3s ease-in;
+}
+.fadeMain2 {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
 .fadeInMove {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.fadeInMoveSlow {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 2s ease-in, transform 2s ease-out;
 }
 
-.fadeInMove.active {
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fadeInLeftSlow {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+}
+
+.active {
   opacity: 1;
   transform: translateY(0);
 }
