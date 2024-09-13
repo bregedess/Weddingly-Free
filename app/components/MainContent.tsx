@@ -135,7 +135,7 @@ const WeddingScreen = () => {
               </h5>
             </div>
             <div>
-              <p className="mt-5 text-lg uppercase font-xs tracking-widest">
+              <p className="mt-5 text-lg uppercase font-xs tracking-widest text-white">
                 Welcome
               </p>
               {!isOpen ? (
@@ -148,7 +148,7 @@ const WeddingScreen = () => {
               ) : (
                 <IoIosArrowUp
                   stroke="4"
-                  className="mx-auto mt-20 animate-upDown"
+                  className="mx-auto mt-20 animate-upDown text-white"
                 />
               )}
             </div>

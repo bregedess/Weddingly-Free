@@ -36,7 +36,7 @@ const ScreenStart = () => {
 
   return (
     <div
-      className={`flex flex-col justify-center items-center min-h-screen transition-opacity duration-1000 ${fadeClass}`}
+      className={` text-white flex flex-col justify-center items-center min-h-screen transition-opacity duration-1000 ${fadeClass}`}
     >
       <TypeAnimation
         sequence={[
