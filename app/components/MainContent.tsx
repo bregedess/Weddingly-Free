@@ -89,7 +89,7 @@ const WeddingScreen = () => {
       <div
         className="md:flex justify-center hidden items-end pb-12 w-2/3 h-1/2 md:h-full"
         style={{
-          backgroundImage: `url(/foto_1_samping.jpg)`,
+          backgroundImage: `url(/foto_1_samping.jpg)`, //refer to base 1st photo
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -97,7 +97,7 @@ const WeddingScreen = () => {
         <div
           className={`bottom-10 left-20 font-ovo text-lg text-white tracking-[5px]`}
         >
-          GLENN & CINDY
+          MIKHA & CLARA
         </div>
       </div>
 
@@ -123,7 +123,7 @@ const WeddingScreen = () => {
                 } `}
                 ref={mainRef}
               >
-                GLENN & CINDY
+                MIKHA & CLARA
               </h1>
               <h5
                 className={`text-sm  font-legan text-white uppercase tracking-wide  fadeMain2 ${
@@ -131,7 +131,7 @@ const WeddingScreen = () => {
                 } `}
                 ref={main2Ref}
               >
-                Saturday, 9th December 2024
+                Sunday, November 3rd, 2024
               </h5>
             </div>
             <div>
@@ -143,7 +143,7 @@ const WeddingScreen = () => {
                   className="animate-bounce  mt-5 px-5 py-1 uppercase text-xs border border-white hover:text-white hover:bg-transparent rounded-full bg-white text-black transition"
                   onClick={handleOpen}
                 >
-                  Open
+                  Open Invitation
                 </button>
               ) : (
                 <IoIosArrowUp
@@ -180,7 +180,7 @@ const WeddingScreen = () => {
                   how can one keep warm alone? And though a man might prevail
                   against one who is alone, two will withstand him.
                 </p>
-                <p className="text-6xl mt-5 font-wonder">Glenn & Cindy</p>
+                <p className="text-6xl mt-5 font-wonder">Mikha & Clara</p>
               </div>
             </div>
             {/* Slide 2 */}
@@ -199,22 +199,22 @@ const WeddingScreen = () => {
               >
                 <p className="font-legan text-sm my-2">The Groom</p>
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
-                  GLENN REYSAN
+                  MIKHA SATRIA SIHOTANG
                 </h1>
-                <h3 className="font-thesignature text-4xl">
-                  The second son of
+                <h3 className="font-thesignature text-2xl">
+                  About Mikha,
                 </h3>
                 <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
+                Born at November 16th 1993 at Tangerang. 
+                Son of Mr. Ronny B. Sihotang and Mrs. Louise Saija Simbolon 
+                with one beloved brother Jay Idoan Sihotang.
                 </p>
                 <Link
-                  href="https://www.instagram.com/glenn"
+                  href="https://www.instagram.com/mikhasatria"
                   target="_blank"
                   className="cursor-pointer hover:bg-black text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#4E4E4E] w-fit px-4 py-2 text-[#CCCCCC]"
                 >
-                  <FaInstagram /> GLEENN
+                  <FaInstagram /> mikhasatria
                 </Link>
               </div>
             </div>
@@ -234,10 +234,10 @@ const WeddingScreen = () => {
               >
                 <p className="font-legan text-sm my-2">The Bride</p>
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
-                  CINDY ANJANI SALAWAS
+                  CLARA SAGALA
                 </h1>
-                <h3 className="font-thesignature text-4xl">
-                  The first daughter of
+                <h3 className="font-thesignature text-2xl">
+                  About Clara,
                 </h3>
                 <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -245,11 +245,11 @@ const WeddingScreen = () => {
                   leo.
                 </p>
                 <Link
-                  href="https://www.instagram.com/cindy"
+                  href="https://www.instagram.com/clarlaa"
                   target="_blank"
                   className="cursor-pointer hover:bg-black text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#4E4E4E] w-fit px-4 py-2 text-[#CCCCCC]"
                 >
-                  <FaInstagram /> CINDY
+                  <FaInstagram /> clarlaa
                 </Link>
               </div>
             </div>
@@ -341,7 +341,7 @@ const WeddingScreen = () => {
                 >
                   <hr className="w-[120px] mx-2 border-t border-gray-300" />
                   <span className="px-2 font-thesignature text-3xl">
-                    Glenn & Cindy
+                    Mikha & Clara
                   </span>
                 </div>
               </div>
@@ -365,7 +365,7 @@ const WeddingScreen = () => {
                   save our date
                 </h3>
                 <h1 className="text-2xl w-[200px] text-center text-white  font-ovo">
-                  SATURDAY <br /> 01 MARCH 2024
+                  SUNDAY <br /> 03 NOVEMBER 2024
                 </h1>
 
                 <div className="mt-5 mx-auto flex flex-col items-center">
@@ -373,11 +373,10 @@ const WeddingScreen = () => {
                     Holy Matrimony <br /> 12.00 - 01.00 PM
                   </h3>
                   <p className="text-sm text-center  font-legan text-white">
-                    Gereja Katedral Jakarta <br /> Jl. Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit.
+                    GMAHK Bintaro <br /> Jl. Maleo Raya, Sektor 9, Pondok Aren, Bintaro Jaya, Pd. Pucung, Kec. Pd. Aren, Kota Tangerang, Banten 15229
                   </p>
                   <Link
-                    href="https://maps.app.goo.gl/fQGiC37iEx6fcuNq8"
+                    href="https://maps.app.goo.gl/vPmfWux29qYYfkJTA"
                     target="_blank"
                     className="cursor-pointer hover:text-white/20 text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#808080] w-fit px-4 py-2 text-white"
                   >
@@ -537,40 +536,6 @@ const WeddingScreen = () => {
                 <p className="text-[0.5rem] uppercase text-center">
                   Created By Peter Shaan
                 </p>
-                <div>
-                  <div className="flex gap-x-3">
-                    <Link
-                      href="https://wa.me/6289529882952"
-                      target="_blank"
-                      className="my-2 flex items-center justify-center gap-x-2 hover:underline"
-                    >
-                      <FaWhatsapp />
-                      <p className=" tracking-widest text-[0.6rem]">
-                        +6289529882952
-                      </p>
-                    </Link>
-                    <Link
-                      href="https://instagram.com/petershaan_"
-                      target="_blank"
-                      className="my-2 flex items-center justify-center gap-x-2 hover:underline"
-                    >
-                      <FaInstagram />
-                      <p className=" tracking-widest text-[0.6rem]">
-                        @petershaan_
-                      </p>
-                    </Link>
-                  </div>
-                  <Link
-                    href="https://petershaan.com"
-                    target="_blank"
-                    className="mb-4 flex items-center justify-center gap-x-2 -mt-1 hover:underline"
-                  >
-                    <IoGlobeOutline />
-                    <p className=" tracking-widest text-[0.6rem]">
-                      petershaan.com
-                    </p>
-                  </Link>
-                </div>
                 <p className="text-xs">© All rights reserved by petershaan</p>
               </footer>
             </div>
