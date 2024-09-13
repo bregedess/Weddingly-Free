@@ -3,8 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { IoGlobeOutline } from "react-icons/io5";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import CountdownTimer from "./Countdown";
