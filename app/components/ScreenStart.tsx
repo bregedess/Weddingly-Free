@@ -42,7 +42,7 @@ const ScreenStart = () => {
         sequence={[
           "THE WEDDING OF",
           2000, // Tampilkan selama 2 detik
-          "GLENN & CINDY",
+          "MIKHA & CLARA",
           1000, // Tampilkan selama 1 detik
         ]}
         wrapper="span"
