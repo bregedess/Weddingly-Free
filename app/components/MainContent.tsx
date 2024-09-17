@@ -261,7 +261,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
             </div>
             {/* Slide 4 */}
             <div
-              className="snap-start  text-white h-screen flex  pt-16 px-12 "
+              className="snap-start  text-white h-screen pt-8 flex px-12 "
               style={{
                 backgroundImage: `url(/slide_4.jpg)`,
                 backgroundSize: "cover",
@@ -272,7 +272,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               <div>
                 <h1
                   ref={slide4Ref}
-                  className={`text-xl md:text-5xl text-white font-ovo fadeInMove ${
+                  className={`text-xl md:text-5xl  text-white font-ovo fadeInMove ${
                     isSlide4InView ? " active" : ""
                   }`}
                 >
@@ -288,7 +288,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-sm font-legan text-white fadeInLeftSlow ${
+                  className={`text-xs font-legan text-white fadeInLeftSlow ${
                     isSlide4InView ? "active" : ""
                   }`}
                 >
@@ -307,7 +307,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-sm font-legan text-white fadeInLeftSlow ${
+                  className={`text-xs font-legan text-white fadeInLeftSlow ${
                     isSlide4InView ? " active" : ""
                   }`}
                 >
@@ -326,7 +326,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-sm font-legan text-white fadeInLeftSlow ${
+                  className={`text-xs font-legan text-white fadeInLeftSlow ${
                     isSlide4InView ? " active" : ""
                   }`}
                 >
