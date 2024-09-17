@@ -9,7 +9,11 @@ import CountdownTimer from "./Countdown";
 import Form from "./Form";
 import WishesList from "./WishesList";
 
-const WeddingScreen = () => {
+type WeddingScreenProps = {
+  name?: string;
+};
+
+const WeddingScreen = ({ name }: WeddingScreenProps) => {
   const [fadeClass, setFadeClass] = useState("opacity-0"); // Untuk fade-in pertama kali
   const [isOpen, setIsOpen] = useState(false);
   const audioRef = useRef(null);
@@ -142,7 +146,7 @@ const WeddingScreen = () => {
             </div>
             <div>
               <p className="mt-5 text-lg uppercase font-xs tracking-widest text-white">
-                Welcome
+                {name ? `Dear ${name},` : "Welcome"}
               </p>
               {!isOpen ? (
                 <button
@@ -207,13 +211,11 @@ const WeddingScreen = () => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   MIKHA SATRIA SIHOTANG
                 </h1>
-                <h3 className="font-thesignature text-2xl">
-                  About Mikha,
-                </h3>
+                <h3 className="font-thesignature text-2xl">About Mikha,</h3>
                 <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
-                Born at November 16th 1993 at Tangerang. 
-                Son of Mr. Ronny B. Sihotang and Mrs. Louise Saija Simbolon 
-                with one beloved brother Jay Idoan Sihotang.
+                  Born at November 16th 1993 at Tangerang. Son of Mr. Ronny B.
+                  Sihotang and Mrs. Louise Saija Simbolon with one beloved
+                  brother Jay Idoan Sihotang.
                 </p>
                 <Link
                   href="https://www.instagram.com/mikhasatria"
@@ -242,9 +244,7 @@ const WeddingScreen = () => {
                 <h1 className="text-xl md:text-3xl text-white  font-ovo">
                   CLARA SAGALA
                 </h1>
-                <h3 className="font-thesignature text-2xl">
-                  About Clara,
-                </h3>
+                <h3 className="font-thesignature text-2xl">About Clara,</h3>
                 <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
@@ -379,7 +379,9 @@ const WeddingScreen = () => {
                     Holy Matrimony <br /> 12.00 - 01.00 PM
                   </h3>
                   <p className="text-sm text-center  font-legan text-white">
-                    GMAHK Bintaro <br /> Jl. Maleo Raya, Sektor 9, Pondok Aren, Bintaro Jaya, Pd. Pucung, Kec. Pd. Aren, Kota Tangerang, Banten 15229
+                    GMAHK Bintaro <br /> Jl. Maleo Raya, Sektor 9, Pondok Aren,
+                    Bintaro Jaya, Pd. Pucung, Kec. Pd. Aren, Kota Tangerang,
+                    Banten 15229
                   </p>
                   <Link
                     href="https://maps.app.goo.gl/vPmfWux29qYYfkJTA"
