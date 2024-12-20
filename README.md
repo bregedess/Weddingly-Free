@@ -9,7 +9,10 @@
 
 <p align="center">
   <a href="https://petershaan.com">
-    <img src="https://img.shields.io/badge/author-peter%20shaan-yellow.svg" />
+    <img src="https://img.shields.io/badge/author-peter%20shaan-black.svg" />
+  </a>
+  <a href="https://github.com/petershaan12/Weddingly-Free/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue" />
   </a>
 </p>
 
