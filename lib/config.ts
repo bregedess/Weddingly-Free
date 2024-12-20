@@ -1,6 +1,3 @@
-import { time } from "console";
-
-// lib/config.ts
 export const config = {
     coupleNames: process.env.NEXT_PUBLIC_COUPLE_NAMES || "Default Names",
     eventDate: process.env.NEXT_PUBLIC_EVENT_DATE || "2025-01-01T00:00:00",
