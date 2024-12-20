@@ -1,19 +1,26 @@
 <p href="#" align="center">
   <img alt=" Weedingly Free – an open-source wedding invitation." src="public/remove_me/logo.png" width="100" >
   <h1 align="center">Weedingly</h1>
+  <p align="center">
+        Made with ❤️ by <a ref="https://github.com/petershaan12">Peter Shaan</a>.
+    </p>
 </p>
 
 <p align="center">
-  Weedingly Free – an open-source wedding invitation.
+  Weedingly Free – an open-source wedding invitation. </br>
 </p>
 
 <p align="center">
-  <a href="https://petershaan.com">
-    <img src="https://img.shields.io/badge/author-peter%20shaan-black.svg" />
-  </a>
-  <a href="https://github.com/petershaan12/Weddingly-Free/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue" />
-  </a>
+ <a href="https://nextjs.org/">
+       <img alt="Next.js logo" src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_light_background.png" height="75">
+    </a>
+    <a href="https://www.mongodb.com/">
+        <img src="https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png" height="75">
+    </a>
+    <a href="https://vercel.com"><img alt="Vercel logo" src="https://img.shields.io/badge/MADE%20BY%20Vercel-000000.svg?style=for-the-badge&logo=Vercel&labelColor=000"></a>
+     <a href="https://github.com/petershaan12/Weddingly-Free/blob/main/LICENSE">
+        <img src="https://img.shields.io/npm/l/next.svg?style=for-the-badge&labelColor=000000" />
+    </a>
 </p>
 
 ## About
@@ -59,10 +66,31 @@ This project was inspired by the beautiful designs found on [Groove Public](http
    Create a new database in MongoDB and name it `wish`. Inside this database, create a collection named `wishes`.
 4. **Run The Project**
 
-   ```bash
-       npm install
-       npm run dev
-   ```
+    ```bash
+    npm install
+    npm run dev
+    ```
+
+5. **Deploy to Vercel**:
+
+    You can easily deploy your project to Vercel by following these steps:
+
+    - If you don't have a Vercel account, sign up at [vercel.com](https://vercel.com/).
+    - Install the Vercel CLI:
+
+      ```bash
+      npm install -g vercel
+      ```
+
+    - Run the following command in your project directory:
+
+      ```bash
+      vercel
+      ```
+
+    - Follow the prompts to link your project to your Vercel account and deploy it.
+
+    Your wedding invitation will be live and accessible via the URL provided by Vercel.
 
 ## Contributing
 
