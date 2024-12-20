@@ -5,11 +5,10 @@ const Form = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true); // Set loading state to true
+    setLoading(true);
 
-    const form = e.currentTarget; // Reference the form element
+    const form = e.currentTarget;
     if (!form) {
-      console.error("Form element is not available");
       setLoading(false);
       return;
     }
@@ -22,10 +21,10 @@ const Form = () => {
       message: formData.get("message"),
     };
 
-    // Client-side validation
+
     if (!data.name || !data.attendance || !data.guests || !data.message) {
       alert("All fields are required!");
-      setLoading(false); // Set loading to false if validation fails
+      setLoading(false); 
       return;
     }
 
@@ -124,9 +123,9 @@ const Form = () => {
         <button
           type="submit"
           className="block w-full p-2 text-sm font-medium text-center text-black bg-white border border-transparent rounded-md shadow-sm"
-          disabled={loading} // Disable the button when loading
+          disabled={loading} 
         >
-          {loading ? "Submitting..." : "Submit"} {/* Display loading text */}
+          {loading ? "Submitting..." : "Submit"} 
         </button>
       </div>
     </form>

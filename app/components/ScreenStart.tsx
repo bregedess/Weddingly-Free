@@ -1,27 +1,26 @@
 "use client";
 
+import { config } from "@/lib/config";
 import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const ScreenStart = () => {
   const [showScreenStart, setShowScreenStart] = useState(true);
-  const [fadeClass, setFadeClass] = useState("opacity-100"); // Mulai dengan opacity-0 untuk fade-in
+  const [fadeClass, setFadeClass] = useState("opacity-100");
 
   useEffect(() => {
-    // Atur untuk fade-in pada awalnya
     const fadeInTimer = setTimeout(() => {
       setFadeClass("opacity-100");
-    }, 100); // Mulai fade-in sedikit setelah komponen dimuat
+    }, 100); 
 
-    // Atur untuk fade-out setelah 4 detik
+    
     const fadeOutTimer = setTimeout(() => {
       setFadeClass("opacity-0");
-    }, 6000); // Mulai fade-out setelah 4 detik
+    }, 6000); 
 
-    // Hapus ScreenStart sepenuhnya setelah fade-out
     const removeScreenStart = setTimeout(() => {
       setShowScreenStart(false);
-    }, 7000); // Hapus setelah 6 detik
+    }, 7000);
 
     return () => {
       clearTimeout(fadeInTimer);
@@ -41,9 +40,9 @@ const ScreenStart = () => {
       <TypeAnimation
         sequence={[
           "THE WEDDING OF",
-          2000, // Tampilkan selama 2 detik
-          "MIKHA & CLARA",
-          1000, // Tampilkan selama 1 detik
+          2000, 
+          config.coupleNames.toUpperCase(),
+          1000,
         ]}
         wrapper="span"
         speed={20}

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Ovo } from "@next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { config } from "@/lib/config";
 
 const legan = localFont({
   src: "./fonts/Legan.woff",
@@ -27,9 +28,10 @@ const ovo = Ovo({
   variable: "--font-ovo",
 });
 
+
 export const metadata: Metadata = {
-  title: "The Wedding of Glenn & Cindy",
-  description: "Wedding Invitation",
+  title: `The Wedding of ${config.coupleNames}`,
+  description: `Wedding Invitation of ${config.coupleNames}, made by Peter Shaan`,
 };
 
 export default function RootLayout({

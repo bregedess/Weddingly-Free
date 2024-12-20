@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 
+const eventDate = process.env.NEXT_PUBLIC_EVENT_DATE
+
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-09-20T00:00:00"); // Set tanggal tujuan (misal 9 Desember 2024)
+    const targetDate = new Date(eventDate || "2025-01-01T00:00:00"); 
     const now = new Date();
     const difference = Number(targetDate) - Number(now);
 
