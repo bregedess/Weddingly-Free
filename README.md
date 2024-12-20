@@ -26,7 +26,7 @@ Weedingly includes a built-in RSVP feature that allows guests to confirm their a
 
 ---
 
-Feel free to fork, clone, and use this template for your wedding invitations 😁.
+This project was inspired by the beautiful designs found on [Groove Public](https://groovepublic.com/reveused/). You can edit, improvise, and customize the template to suit your unique wedding theme and preferences. Feel free to add your personal touch and make it truly yours 🥳😃.
 
 ---
 
@@ -38,7 +38,10 @@ Feel free to fork, clone, and use this template for your wedding invitations �
 - **react-intersection-observer**: Enable smooth animations as the user scrolls.
 - **Dynamic Configuration**: Use environment variables to update wedding details like dates, locations, and Google Maps links.
 - **Responsive Design**: Fully responsive design that works on various screen sizes.
-- **Personalization**: Easily update event details and toggle sections via configuration.
+- **RSVP Management**: Easily manage guest responses with a built-in RSVP feature.
+- **MongoDB Integration**: Store and manage RSVP data using MongoDB.
+- **Customizable RSVP Form**: Tailor the RSVP form to include additional questions or information.
+- **RSVP Tracking**: Keep track of guest responses and manage attendance efficiently.
 
 ---
 
