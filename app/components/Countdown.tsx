@@ -40,20 +40,20 @@ const CountdownTimer = () => {
   return (
     <div className="flex space-x-4 mt-5 text-center font-legan">
       <div className="flex flex-col">
-        <span className="text-4xl font-bold">{timeLeft.days}</span>
-        <span className="text-sm uppercase">Days</span>
+        <span className="text-4xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{timeLeft.days}</span>
+        <span className="text-sm uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Days</span>
       </div>
       <div className="flex flex-col">
-        <span className="text-4xl font-bold">{timeLeft.hours}</span>
-        <span className="text-sm uppercase">Hours</span>
+        <span className="text-4xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{timeLeft.hours}</span>
+        <span className="text-sm uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Hours</span>
       </div>
       <div className="flex flex-col">
-        <span className="text-4xl font-bold">{timeLeft.minutes}</span>
-        <span className="text-sm uppercase">Minutes</span>
+        <span className="text-4xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{timeLeft.minutes}</span>
+        <span className="text-sm uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Minutes</span>
       </div>
       <div className="flex flex-col">
-        <span className="text-4xl font-bold">{timeLeft.seconds}</span>
-        <span className="text-sm uppercase">Seconds</span>
+        <span className="text-4xl font-bold drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{timeLeft.seconds}</span>
+        <span className="text-sm uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">Seconds</span>
       </div>
     </div>
   );

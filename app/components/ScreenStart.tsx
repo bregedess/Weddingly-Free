@@ -39,12 +39,13 @@ const ScreenStart = () => {
     >
       <TypeAnimation
         sequence={[
-          "THE WEDDING OF",
-          2000, 
-          config.coupleNames.toUpperCase(),
+          `THE WEDDING OF`,
+          2000,
+          `${config.coupleNames.toUpperCase()}`,
           1000,
         ]}
         wrapper="span"
+        omitDeletionAnimation={true}
         speed={20}
         style={{
           fontSize: "2em",

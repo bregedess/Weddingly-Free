@@ -227,7 +227,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-xl md:text-2xl font-ovo tracking-wide text-white uppercase">
                   {config.bibleVerse}
                 </h1>
-                <p className="text-sm mt-5 font-legan">
+                <p className="text-sm mt-5 font-legan drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.3)]">
                   {config.bibleVerseContent}
                 </p>
                 <p className="text-6xl mt-5 font-wonder">{config.coupleNames}</p>
@@ -252,7 +252,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   {config.groom}
                 </h1>
                 <h3 className="font-thesignature text-2xl">About {config.groomNickName},</h3>
-                <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
+                <p className="text-sm mt-5 font-legan text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                   {config.groomBio}
                 </p>
                 <Link
@@ -282,7 +282,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                   {config.bride}
                 </h1>
                 <h3 className="font-thesignature text-2xl">About {config.brideNickName},</h3>
-                <p className="text-sm mt-5 font-legan text-[#CCCCCC]">
+                <p className="text-sm mt-5 font-legan text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                   {config.brideBio}
                 </p>
                 <Link
@@ -320,7 +320,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-xs font-legan text-white fadeInLeftSlow ${isSlide4InView ? "active" : ""
+                  className={`text-xs font-legan text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)] fadeInLeftSlow ${isSlide4InView ? "active" : ""
                     }`}
                 >
                   {config.timeline_1_content}
@@ -334,7 +334,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-xs font-legan text-white fadeInLeftSlow ${isSlide4InView ? " active" : ""
+                  className={`text-xs font-legan text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)] fadeInLeftSlow ${isSlide4InView ? " active" : ""
                     }`}
                 >
                   {config.timeline_2_content}
@@ -348,7 +348,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </h3>
                 <p
                   ref={slide4Ref}
-                  className={`text-xs font-legan text-white fadeInLeftSlow ${isSlide4InView ? " active" : ""
+                  className={`text-xs font-legan text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.1)] fadeInLeftSlow ${isSlide4InView ? " active" : ""
                     }`}
                 >
                   {config.timeline_3_content}
@@ -442,8 +442,8 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 className={` ${isSlide6InView ? "active" : ""
                   }  fadeInMove flex items-center flex-col`}
               >
-                <h1 className="text-2xl text-center text-white  font-ovo">
-                  ALMOST TIME FOR OURCELEBRATION
+                <h1 className="text-2xl text-center text-black-100 font-ovo">
+                  <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">ALMOST TIME FOR OURCELEBRATION</p>
                 </h1>
                 {/* Countdown Timer */}
                 <CountdownTimer />
@@ -549,12 +549,12 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 <h1 className="text-3xl text-white font-ovo text-center uppercase">
                   WEDDING GIFT
                 </h1>
-                <p className="text-sm font-legan text-white/80 text-center">
+                <p className="text-md font-ovo text-white/80 text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]">
                 {config.gift.detail}
                 </p>
                 &nbsp;
 
-                <h3 className="text-3xl text-white font-ovo text-center uppercase"><a href="https://saweria.co/destaofi" target="_blank">Saweria</a></h3>
+                <h3 className="text-3xl text-white font-ovo text-center uppercase underline"><a href="https://saweria.co/destaofi" target="_blank">Click Here</a></h3>
               </div>
             </div>
             )}
@@ -618,15 +618,15 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 ref={endRef}
                 className={` ${isEndInView ? "active" : ""} fadeInMove `}
               >
-                <h1 className="text-3xl text-white  font-ovo text-center uppercase">
-                  {config.thankyou}
+                <h1 className="text-3xl text-white font-ovo text-center uppercase">
+                  <p className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{config.thankyou}</p>
                 </h1>
 
                 <div className="mt-5 mx-auto flex flex-col ">
-                  <p className="text-sm font-legan text-white text-center">
+                  <p className="text-md font-legan text-white text-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                     {config.thankyouDetail}
                   </p>
-                  <p className="text-sm rounded-full text-center font-ovo mt-5 px-6 py-2 text-white uppercase">
+                  <p className="text-sm rounded-full text-center font-ovo mt-5 px-6 py-2 text-white uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                     {config.coupleNames}
                   </p>
                 </div>
