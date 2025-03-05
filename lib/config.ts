@@ -46,6 +46,10 @@ export const config = {
         enabled: process.env.NEXT_PUBLIC_RSVP === 'true',
         detail: process.env.NEXT_PUBLIC_RSVP_DETAIL || "Default RSVP Detail",
     },
+    gift: {
+        enabled: process.env.NEXT_PUBLIC_GIFT === 'true',
+        detail: process.env.NEXT_PUBLIC_GIFT_DETAIL || "Love is all we need, but a little extra never hurts! If you’d like to contribute to our new journey, feel free to send a gift through the link below. Thank you!",
+    },
     thankyou: process.env.NEXT_PUBLIC_THANKYOU || "Default Thank You",
     thankyouDetail: process.env.NEXT_PUBLIC_THANKYOU_DETAIL || "Default Thank You Detail",
 };

@@ -74,6 +74,9 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
   const { ref: slide9Ref, inView: isSlide9InView } = useInView({
     threshold: 0.5,
   });
+  const { ref: slide95Ref, inView: isSlide95InView } = useInView({
+    threshold: 0.5,
+  });
   const { ref: slide10Ref, inView: isSlide10InView } = useInView({
     threshold: 0.5,
   });
@@ -490,6 +493,33 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                 </div>
               </div>)}
 
+            {/* SLIDE 9.5 GIFT */}
+            {config.gift.enabled && (
+            <div
+              className="snap-start text-white h-screen flex flex-col justify-center pt-16 pb-16 px-8"
+              style={{
+                backgroundImage: `url(/slide_9.jpg)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div
+                ref={slide95Ref}
+                className={`${isSlide95InView ? "active" : ""} fadeInMove`}
+              >
+                <h1 className="text-3xl text-white font-ovo text-center uppercase">
+                  WEDDING GIFT
+                </h1>
+                <p className="text-sm font-legan text-white/80 text-center">
+                {config.gift.detail}
+                </p>
+                &nbsp;
+
+                <h3 className="text-3xl text-white font-ovo text-center uppercase"><a href="https://saweria.co/destaofi" target="_blank">Saweria</a></h3>
+              </div>
+            </div>
+            )}
+
             {/* SLIDE 9 */}
             {config.rsvp.enabled && (
             <div
@@ -566,6 +596,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               <footer className="flex flex-col items-center mt-8">
                 <p className="text-[0.5rem] uppercase text-center">
                   Created By Peter Shaan
+                  Forked By Andika Rifki Desta
                 </p>
                 <p className="text-xs">© All rights reserved by petershaan</p>
               </footer>

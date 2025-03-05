@@ -38,7 +38,7 @@ body {
 #backgroundWedding {
   background-size: cover;
   background-position: center;
-  background-image: url(../public/foto_2.jpg);
+  background-image: url(/foto_1.jpg), url(/foto_2.jpg), url(/foto_3.jpg),url(/foto_4.jpg);
   background-repeat: no-repeat;
   transition: 5s;
   animation-name: animate;
@@ -52,18 +52,18 @@ body {
 }
 
 @keyframes animate {
- 0% {
-  background-image: url(../public/foto_2.jpg);
+ 25% {
+  background-image: url(/foto_1.jpg);
  }
- 45% {
-  background-image: url(../public/foto_4.jpg);
+ 50% {
+  background-image: url(/foto_2.jpg);
  }
-  85% {
-    background-image: url(../public/foto_1.jpg);
-  }
-  100% {
-    background-image: url(../public/foto_2.jpg);
-  }
+ 75% {
+  background-image: url(/foto_3.jpg);
+ }
+ 100% {
+  background-image: url(/foto_4.jpg);
+ }
 }
 
 #backgroundWedding > div {
