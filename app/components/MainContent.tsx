@@ -9,6 +9,7 @@ import CountdownTimer from "./Countdown";
 import Form from "./Form";
 import WishesList from "./WishesList";
 import { config } from "@/lib/config";
+import { Play, Pause } from "lucide-react";
 
 type WeddingScreenProps = {
   name?: string;
@@ -18,6 +19,14 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
   const [fadeClass, setFadeClass] = useState("opacity-0");
   const [isOpen, setIsOpen] = useState(false);
   const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const buttonStyle = {
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    color: "#fff",
+  };
 
   // Untuk fade-in pertama kali
   useEffect(() => {
@@ -28,12 +37,31 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible" && isPlaying) {
+          audioRef.current.play();
+      } else {
+          audioRef.current.pause();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, [isPlaying]);
+
+  const togglePlay = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   const handleOpen = () => {
     setIsOpen(!isOpen);
-    if (!isOpen && audioRef.current) {
-      // Play music when "Open" is clicked
-      (audioRef.current as HTMLAudioElement).play();
-    }
+    togglePlay();
   };
 
   const { ref: mainRef, inView: isMainInView } = useInView({
@@ -99,6 +127,9 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
     <div
       className={`h-screen w-screen flex flex-col md:flex-row ${fadeClass} transition-opacity duration-1000`}
     >
+      <button style={buttonStyle} onClick={togglePlay}>
+      {isPlaying ? <Pause size={20} /> : <Play size={20}/>}
+      </button>
       {/* Gambar sisi kiri Wide Untuk Komputer */}
       <div
         className="md:flex justify-center hidden items-end pb-12 w-2/3 h-1/2 md:h-full"
