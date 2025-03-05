@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, CSSProperties } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
@@ -21,7 +21,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const buttonStyle = {
+  const buttonStyle: CSSProperties = {
     position: "fixed",
     bottom: "20px",
     right: "20px",
@@ -40,9 +40,13 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.visibilityState === "visible" && isPlaying) {
-          audioRef.current.play();
+        if (audioRef.current) {
+          (audioRef.current as HTMLAudioElement).play();
+        }
       } else {
-          audioRef.current.pause();
+        if (audioRef.current) {
+          (audioRef.current as HTMLAudioElement).pause();
+        }
       }
     };
 
@@ -52,9 +56,13 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
 
   const togglePlay = () => {
     if (isPlaying) {
-      audioRef.current.pause();
+      if (audioRef.current) {
+        (audioRef.current as HTMLAudioElement).pause();
+      }
     } else {
-      audioRef.current.play();
+      if (audioRef.current) {
+        (audioRef.current as HTMLAudioElement).play();
+      }
     }
     setIsPlaying(!isPlaying);
   };
