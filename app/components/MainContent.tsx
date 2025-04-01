@@ -391,6 +391,13 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                     day: "numeric",
                   })}
                 </h1>
+                <Link
+                      href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding%20Of%20Desta%20And%20Ofi&dates=20250419T030000Z/20250419T100000Z&details=The%20Wedding%20of%20Desta%20&%20Ofi"
+                      target="_blank"
+                      className="cursor-pointer hover:text-white/20 text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#808080] w-fit px-4 py-2 text-white"
+                    >
+                      Save the Date
+                </Link>
                 {config.holyMatrimony.enabled && (
                   <div className="mt-5 mx-auto flex flex-col items-center">
                     <h3 className="uppercase font-ovo text-sm text-center mt-5 mb-2">
