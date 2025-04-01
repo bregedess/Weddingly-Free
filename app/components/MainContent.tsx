@@ -377,7 +377,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
               <div
                 ref={slide5Ref}
                 className={` ${isSlide5InView ? "active" : ""
-                  }  fadeInMove flex items-center flex-col pt-32 `}
+                  }  fadeInMove flex items-center flex-col pt-5 `}
               >
                 <h3 className="uppercase font-legan text-xs tracking-wide mt-5 mb-2">
                   save our date
@@ -396,7 +396,7 @@ const WeddingScreen = ({ name }: WeddingScreenProps) => {
                       target="_blank"
                       className="cursor-pointer hover:text-white/20 text-sm rounded-full flex items-center gap-x-2 text-center font-legan mt-5 bg-[#808080] w-fit px-4 py-2 text-white"
                     >
-                      Save the Date
+                      Add to Calendar
                 </Link>
                 {config.holyMatrimony.enabled && (
                   <div className="mt-5 mx-auto flex flex-col items-center">
